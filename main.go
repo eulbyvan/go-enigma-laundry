@@ -14,6 +14,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/eulbyvan/go-enigma-laundry/delivery"
 	"github.com/google/uuid"
 	_ "github.com/lib/pq"
 )
@@ -62,7 +63,8 @@ type BillItemRequest struct {
 }
 
 func main() {
-	runConsole()
+	// runConsole()
+	delivery.NewConsole().Run()
 }
 
 // #region console menu
